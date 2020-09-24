@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Bootstrap Demo</title>
+
+    <!-- Bring in our bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        .myclass {
+            background-color: aqua;
+            font-size: xx-small;
+        }
+
+
+
+        @media (min-width: 800px) {
+            .myclass {
+                background-color: skyblue;
+                font-size: xx-large;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+<title>test</title>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">LATITUDE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="page1.html">City Latitude VS Max Temp</a>
+                        <a class="dropdown-item" href="page2.html">City Latitude VS Humidity</a>
+                        <a class="dropdown-item" href="page3.html">City Latitude VS Cloudiness</a>
+                        <a class="dropdown-item" href="page4.html">City Latitude VS Wind Speed</a>
+                    </div>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="page5.html">Comparisons<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="page6.html">Data<span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+
+
+
+
+    <div class="container-fluid">
+
+
+
+        <div class="row">
+
+
+            <div class="card col-sm-5 col-md-8 col-lg-12 myclass" style="width: 18rem;">
+                <img src="Resources/assets/images/Fig3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">City Latitude VS Cloudiness</h5>
+                    <h6 class="card-subtitle mb-2 ">Summary</h6>
+                    <p class="card-text">There is no correlation between cloudiness and latitude.  These findings were expected.</p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
